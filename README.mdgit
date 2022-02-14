@@ -1,0 +1,1 @@
+"# music-player"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/Omar-Vayani/music-player.gitgit push -u origin main
