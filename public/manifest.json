@@ -22,5 +22,5 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "background": "radial-gradient(150px,rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),#a09e9e73,rgb(255, 255, 255),#a09e9e73,rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255));"
+  "background_image": "radial-gradient(150px,rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),#a09e9e73,rgb(255, 255, 255),#a09e9e73,rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255));"
 }
