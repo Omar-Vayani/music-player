@@ -30,7 +30,7 @@ const LibrarySong = ({
     if (isPlaying) audioRef.current.play();
   };
   return (
-    <div
+    <button
       onClick={songSelectHandler}
       className={`library-song ${song.active ? "selected" : ""}`}
     >
@@ -39,7 +39,7 @@ const LibrarySong = ({
         <h3>{song.name}</h3>
         <h4>{song.artist}</h4>
       </div>
-    </div>
+    </button>
   );
 };
 

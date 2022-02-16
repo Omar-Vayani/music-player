@@ -44,7 +44,7 @@ function App() {
     if (isPlaying) audioRef.current.play();
   };
   return (
-    <div className={`App ${libraryStatus ? "library-active" : ""}`}>
+    <section className={`App ${libraryStatus ? "library-active" : ""}`}>
       <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
       <Song currentSong={currentSong} />
       <Player
@@ -73,7 +73,7 @@ function App() {
         src={currentSong.audio}
         onEnded={songEndHandler}
       ></audio>
-    </div>
+    </section>
   );
 }
 
