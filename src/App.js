@@ -43,6 +43,16 @@ function App() {
     await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
     if (isPlaying) audioRef.current.play();
   };
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === " " && isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else if (e.key === " " && isPlaying == false) {
+      audioRef.current.play();
+      setIsPlaying(true);
+    }
+  });
   return (
     <section className={`App ${libraryStatus ? "library-active" : ""}`}>
       <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />

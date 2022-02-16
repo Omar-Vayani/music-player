@@ -35,14 +35,12 @@ const Player = ({
     setSongs(newSongs);
   };
   //event handlers
-  const playSongHandler = (e) => {
+  const playSongHandler = () => {
     if (isPlaying) {
       audioRef.current.pause();
-      console.log("set to no active");
       setIsPlaying(false);
     } else {
       audioRef.current.play();
-      console.log("set to active");
       setIsPlaying(true);
     }
   };
@@ -113,6 +111,8 @@ const Player = ({
         <button>
           <FontAwesomeIcon
             onClick={playSongHandler}
+            autofocus="true"
+            tabIndex="0"
             className="play"
             size="2x"
             icon={isPlaying ? faPause : faPlay}
