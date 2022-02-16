@@ -111,7 +111,6 @@ const Player = ({
         <button>
           <FontAwesomeIcon
             onClick={playSongHandler}
-            autofocus="true"
             tabIndex="0"
             className="play"
             size="2x"
