@@ -35,12 +35,14 @@ const Player = ({
     setSongs(newSongs);
   };
   //event handlers
-  const playSongHandler = () => {
+  const playSongHandler = (e) => {
     if (isPlaying) {
       audioRef.current.pause();
+      console.log("set to no active");
       setIsPlaying(false);
     } else {
       audioRef.current.play();
+      console.log("set to active");
       setIsPlaying(true);
     }
   };
